@@ -4,7 +4,6 @@ import { decrement, increment } from "../features/counters/counterSlice";
 
 const HomePage = () => {
     const counters = useSelector((state) => state.counters);
-    const [inputValue, setInputValue] = useState(0);
     const dispatch = useDispatch();
     console.log(counters);
 
